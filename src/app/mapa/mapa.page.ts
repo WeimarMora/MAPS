@@ -36,21 +36,57 @@ export class MapaPage implements AfterViewInit, OnDestroy {
   });
 
   private iconosPorTipo: Record<TipoPunto, L.DivIcon> = {
-    cafeteria: L.divIcon({
+    educacion: L.divIcon({
       className: 'marker-punto',
-      html: '☕',
+      html: '🏫',
       iconSize: [30, 30],
       iconAnchor: [15, 15]
     }),
-    biblioteca: L.divIcon({
+    transporte: L.divIcon({
       className: 'marker-punto',
-      html: '📚',
+      html: '🚉',
       iconSize: [30, 30],
       iconAnchor: [15, 15]
     }),
-    bano: L.divIcon({
+    cultura: L.divIcon({
       className: 'marker-punto',
-      html: '🚻',
+      html: '🏛️',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    plaza: L.divIcon({
+      className: 'marker-punto',
+      html: '📌',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    comercio: L.divIcon({
+      className: 'marker-punto',
+      html: '🛍️',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    religioso: L.divIcon({
+      className: 'marker-punto',
+      html: '⛪',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    salud: L.divIcon({
+      className: 'marker-punto',
+      html: '🏥',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    parque: L.divIcon({
+      className: 'marker-punto',
+      html: '🌳',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
+    }),
+    mercado: L.divIcon({
+      className: 'marker-punto',
+      html: '🧺',
       iconSize: [30, 30],
       iconAnchor: [15, 15]
     })
